@@ -1,0 +1,101 @@
+/* Reset CSS untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Warna latar belakang yang lebih terang */
+    color: #333; /* Warna teks yang lebih gelap */
+}
+
+/* Container untuk konten utama */
+.container {
+    max-width: 900px; /* Lebar maksimum */
+    margin: 40px auto; /* Margin otomatis untuk pusat */
+    padding: 30px;
+    background-color: #ffffff; /* Warna latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Gaya untuk judul */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007bff; /* Warna biru untuk judul */
+    text-align: center; /* Rata tengah */
+}
+
+/* Gaya untuk label */
+label {
+    font-weight: bold; /* Teks tebal untuk label */
+    margin-bottom: 5px; /* Jarak bawah label */
+    display: block; /* Memastikan label di atas input */
+}
+
+/* Gaya untuk input dan select */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 15px; /* Jarak bawah input */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+}
+
+/* Gaya untuk tombol */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff; /* Warna teks putih */
+    background-color: #007bff; /* Warna latar belakang biru */
+    border: none;
+    border-radius: 5px; /* Sudut tombol melengkung */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+/* Gaya untuk tombol hover */
+button:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek hover tombol */
+}
+
+button:active {
+    transform: translateY(0); /* Mengembalikan posisi saat ditekan */
+}
+
+/* Gaya untuk link kembali di halaman show */
+a {
+    display: inline-block; /* Memastikan link berada di baris baru */
+    margin-top: 20px; /* Jarak atas */
+    color: #007bff; /* Warna biru */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-weight: bold; /* Teks tebal */
+}
+
+/* Gaya untuk link saat hover */
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Padding lebih kecil di perangkat kecil */
+    }
+
+    h1 {
+        font-size: 24px; /* Ukuran font lebih kecil di perangkat kecil */
+    }
+
+    button {
+        font-size: 14px; /* Ukuran font tombol lebih kecil di perangkat kecil */
+        padding: 10px 15px; /* Padding lebih kecil di perangkat kecil */
+    }
+}
